@@ -34,7 +34,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  */
 public class DefaultConstraintValidatorFactory implements ConstraintValidatorFactory, Closeable {
     private final Collection<BValExtension.Releasable<?>> releasables = new CopyOnWriteArrayList<BValExtension.Releasable<?>>();
-    private Boolean useCdi = null; // store it to avoid NoClassDefFoundError when cdi is not present (it is slow) + lazily (to wait cdi is started)
+    private volatile Boolean useCdi = null; // store it to avoid NoClassDefFoundError when cdi is not present (it is slow) + lazily (to wait cdi is started)
 
     /**
      * Instantiate a Constraint.
