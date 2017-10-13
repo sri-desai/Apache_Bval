@@ -83,7 +83,7 @@ public class ApacheFactoryContext implements ValidatorContext {
      */
     public ValidatorContext messageInterpolator(MessageInterpolator messageInterpolator) {
         this.messageInterpolator = messageInterpolator;
-        resetMeta();
+        //resetMeta();
         return this;
     }
 
@@ -92,7 +92,7 @@ public class ApacheFactoryContext implements ValidatorContext {
      */
     public ValidatorContext traversableResolver(TraversableResolver traversableResolver) {
         this.traversableResolver = traversableResolver;
-        resetMeta();
+        //resetMeta();
         return this;
     }
 
@@ -101,13 +101,13 @@ public class ApacheFactoryContext implements ValidatorContext {
      */
     public ValidatorContext constraintValidatorFactory(ConstraintValidatorFactory constraintValidatorFactory) {
         this.constraintValidatorFactory = constraintValidatorFactory;
-        resetMeta();
+        //resetMeta();
         return this;
     }
 
     public ValidatorContext parameterNameProvider(ParameterNameProvider parameterNameProvider) {
         this.parameterNameProvider = parameterNameProvider;
-        resetMeta();
+        //resetMeta();
         return this;
     }
 
