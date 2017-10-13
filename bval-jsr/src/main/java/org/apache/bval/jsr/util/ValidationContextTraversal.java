@@ -30,7 +30,6 @@ import org.apache.bval.util.PropertyAccess;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.reflect.TypeUtils;
 
-import java.lang.annotation.ElementType;
 import java.lang.reflect.Type;
 
 /**
@@ -39,8 +38,7 @@ import java.lang.reflect.Type;
  * @version $Rev: 1137074 $ $Date: 2011-06-17 18:20:30 -0500 (Fri, 17 Jun 2011) $
  */
 public class ValidationContextTraversal extends CallbackProcedure {
-    private static class NullSafePropertyAccess extends AccessStrategy {
-        private final PropertyAccess wrapped;
+    private static class NullSafePropertyAccess extends PropertyAccess {
 
         /**
          * Create a new NullSafePropertyAccess instance.
@@ -49,7 +47,7 @@ public class ValidationContextTraversal extends CallbackProcedure {
          * @param propertyName
          */
         public NullSafePropertyAccess(Class<?> clazz, String propertyName) {
-            wrapped = PropertyAccess.getInstance(clazz, propertyName);
+            super(clazz, propertyName);
         }
 
         /**
@@ -57,22 +55,7 @@ public class ValidationContextTraversal extends CallbackProcedure {
          */
         @Override
         public Object get(Object bean) {
-            return bean == null ? null : wrapped.get(bean);
-        }
-
-        @Override
-        public ElementType getElementType() {
-            return wrapped.getElementType();
-        }
-
-        @Override
-        public Type getJavaType() {
-            return wrapped.getJavaType();
-        }
-
-        @Override
-        public String getPropertyName() {
-            return wrapped.getPropertyName();
+            return bean == null ? null : super.get(bean);
         }
     }
 
@@ -143,7 +126,7 @@ public class ValidationContextTraversal extends CallbackProcedure {
         if (mp == null) {
             // TODO this could indicate a property hosted on a superclass; should we shunt the context traversal down a path based on that type?
 
-            PropertyAccess access = PropertyAccess.getInstance(rawType, token);
+            PropertyAccess access = new PropertyAccess(rawType, token);
             if (access.isKnown()) {
                 // add heretofore unknown, but valid, property on the fly:
                 mp = JsrMetaBeanFactory.addMetaProperty(metaBean, access);

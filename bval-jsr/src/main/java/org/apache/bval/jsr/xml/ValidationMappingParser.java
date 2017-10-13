@@ -47,10 +47,13 @@ import javax.xml.validation.Schema;
 
 import org.apache.bval.jsr.ApacheValidatorFactory;
 import org.apache.bval.jsr.ConstraintAnnotationAttributes;
+import org.apache.bval.jsr.util.EnumerationConverter;
 import org.apache.bval.jsr.util.IOs;
 import org.apache.bval.util.FieldAccess;
 import org.apache.bval.util.MethodAccess;
 import org.apache.bval.util.reflection.Reflection;
+import org.apache.commons.beanutils.ConvertUtils;
+import org.apache.commons.beanutils.Converter;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.weaver.privilizer.Privileged;
@@ -62,6 +65,7 @@ import org.apache.commons.weaver.privilizer.Privilizing.CallTo;
  */
 @Privilizing(@CallTo(Reflection.class))
 public class ValidationMappingParser {
+    //    private static final Log log = LogFactory.getLog(ValidationMappingParser.class);
     private static final String VALIDATION_MAPPING_XSD = "META-INF/validation-mapping-1.1.xsd";
 
     private static final Set<ConstraintAnnotationAttributes> RESERVED_PARAMS = Collections.unmodifiableSet(EnumSet.of(
@@ -262,25 +266,8 @@ public class ValidationMappingParser {
          * spec: Note that if the raw string is unqualified,
          * default package is taken into account.
          */
-        if (returnType.equals(String.class)) {
-            return value;
-        }
         if (returnType.equals(Class.class)) {
-            ClassLoader cl = Reflection.getClassLoader(ValidationMappingParser.class);
-            try {
-                return Reflection.getClass(cl, toQualifiedClassName(value, defaultPackage));
-            } catch (Exception e) {
-                throw new ValidationException(e);
-            }
-        }
-        if (returnType.isEnum()) {
-            try {
-                @SuppressWarnings({ "rawtypes", "unchecked" })
-                final Enum e = Enum.valueOf(returnType.asSubclass(Enum.class), value);
-                return e;
-            } catch (IllegalArgumentException e) {
-                throw new ValidationException(e);
-            }
+            value = toQualifiedClassName(value, defaultPackage);
         }
         if (Byte.class.equals(returnType) || byte.class.equals(returnType)) { // spec mandates it
             return Byte.parseByte(value);
@@ -309,7 +296,17 @@ public class ValidationMappingParser {
             }
             return value.charAt(0);
         }
-        throw new ValidationException(String.format("Unknown annotation value type %s", returnType.getName()));
+
+        /* Converter lookup */
+        Converter converter = ConvertUtils.lookup(returnType);
+        if (converter == null && returnType.isEnum()) {
+            converter = EnumerationConverter.getInstance();
+        }
+
+        if (converter == null) {
+            return converter;
+        }
+        return converter.convert(returnType, value);
     }
 
     private <A extends Annotation> Annotation createAnnotation(AnnotationType annotationType,

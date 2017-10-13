@@ -74,23 +74,23 @@ public class ConfigurationImpl implements ApacheValidatorConfiguration, Configur
     /**
      * Configured {@link MessageInterpolator}
      */
-    protected volatile MessageInterpolator defaultMessageInterpolator = new DefaultMessageInterpolator();
-    protected volatile MessageInterpolator messageInterpolator = defaultMessageInterpolator;
+    protected MessageInterpolator defaultMessageInterpolator = new DefaultMessageInterpolator();
+    protected MessageInterpolator messageInterpolator = defaultMessageInterpolator;
     protected Class<? extends MessageInterpolator> messageInterpolatorClass = null;
 
     /**
      * Configured {@link ConstraintValidatorFactory}
      */
-    protected volatile ConstraintValidatorFactory defaultConstraintValidatorFactory = new DefaultConstraintValidatorFactory();
-    protected volatile ConstraintValidatorFactory constraintValidatorFactory = defaultConstraintValidatorFactory;
+    protected ConstraintValidatorFactory defaultConstraintValidatorFactory = new DefaultConstraintValidatorFactory();
+    protected ConstraintValidatorFactory constraintValidatorFactory = defaultConstraintValidatorFactory;
     protected Class<? extends ConstraintValidatorFactory> constraintValidatorFactoryClass = null;
 
-    protected volatile TraversableResolver defaultTraversableResolver = new DefaultTraversableResolver();
-    protected volatile TraversableResolver traversableResolver = defaultTraversableResolver;
+    protected TraversableResolver defaultTraversableResolver = new DefaultTraversableResolver();
+    protected TraversableResolver traversableResolver = defaultTraversableResolver;
     protected Class<? extends TraversableResolver> traversableResolverClass = null;
 
-    protected volatile ParameterNameProvider defaultParameterNameProvider = new DefaultParameterNameProvider();
-    protected volatile ParameterNameProvider parameterNameProvider = defaultParameterNameProvider;
+    protected ParameterNameProvider defaultParameterNameProvider = new DefaultParameterNameProvider();
+    protected ParameterNameProvider parameterNameProvider = defaultParameterNameProvider;
     protected Class<? extends ParameterNameProvider> parameterNameProviderClass = null;
 
     protected BootstrapConfiguration  bootstrapConfiguration;

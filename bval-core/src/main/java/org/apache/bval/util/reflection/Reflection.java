@@ -30,6 +30,8 @@ import org.apache.commons.weaver.privilizer.Privilizing;
 
 /**
  * Security-agnostic "blueprint" class for reflection-related operations. Intended for use by Apache BVal code.
+ * 
+ * @version $Rev$ $Date$
  */
 public class Reflection {
     /**

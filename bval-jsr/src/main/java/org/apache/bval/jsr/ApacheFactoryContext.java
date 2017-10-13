@@ -32,7 +32,7 @@ import javax.validation.ValidatorContext;
 
 /**
  * Description: Represents the context that is used to create
- * {@link ClassValidator} instances.
+ * <code>ClassValidator</code> instances.<br/>
  */
 @Privilizing(@CallTo(Reflection.class))
 public class ApacheFactoryContext implements ValidatorContext {
@@ -74,17 +74,7 @@ public class ApacheFactoryContext implements ValidatorContext {
         return metaBeanFinder;
     }
 
-    /**
-     * Discard cached metadata. Calling this method unnecessarily has the effect of severly
-     * limiting performance, therefore only do so when changes have been made that affect
-     * validation metadata, i.e. particularly NOT in response to:
-     * <ul>
-     *   <li>{@link #messageInterpolator(MessageInterpolator)}</li>
-     *   <li>{@link #traversableResolver(TraversableResolver)}</li>
-     *   <li>{@link #constraintValidatorFactory(ConstraintValidatorFactory)</li>
-     * </ul>
-     */
-    private synchronized void resetMeta() {
+    private synchronized void resetMeta() { // ensure to ingnore the cache and rebuild constraint with new model
         metaBeanFinder = factory.buildMetaBeanFinder();
     }
 
@@ -93,6 +83,7 @@ public class ApacheFactoryContext implements ValidatorContext {
      */
     public ValidatorContext messageInterpolator(MessageInterpolator messageInterpolator) {
         this.messageInterpolator = messageInterpolator;
+        resetMeta();
         return this;
     }
 
@@ -101,6 +92,7 @@ public class ApacheFactoryContext implements ValidatorContext {
      */
     public ValidatorContext traversableResolver(TraversableResolver traversableResolver) {
         this.traversableResolver = traversableResolver;
+        resetMeta();
         return this;
     }
 
@@ -109,12 +101,13 @@ public class ApacheFactoryContext implements ValidatorContext {
      */
     public ValidatorContext constraintValidatorFactory(ConstraintValidatorFactory constraintValidatorFactory) {
         this.constraintValidatorFactory = constraintValidatorFactory;
+        resetMeta();
         return this;
     }
 
     public ValidatorContext parameterNameProvider(ParameterNameProvider parameterNameProvider) {
         this.parameterNameProvider = parameterNameProvider;
-        resetMeta(); // needed since parameter names are a component of validation metadata
+        resetMeta();
         return this;
     }
 

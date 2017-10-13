@@ -133,6 +133,7 @@ public class ValidationParser {
                     parser.xmlConfig.getExecutableValidation().getEnabled(),
                     new CopyOnWriteArraySet<ExecutableType>(targetConfig.getExecutableValidation()),
                     toMap(parser.xmlConfig.getProperty()));
+            return parser;
         } else { // default config
             final CopyOnWriteArraySet<ExecutableType> executableTypes = new CopyOnWriteArraySet<ExecutableType>();
             executableTypes.add(ExecutableType.CONSTRUCTORS);
@@ -147,6 +148,7 @@ public class ValidationParser {
 
             targetConfig.setExecutableValidation(executableTypes);
         }
+
         return parser;
     }
 
@@ -270,12 +272,12 @@ public class ValidationParser {
         if (targetConfig.getParameterNameProvider() == targetConfig.getDefaultParameterNameProvider()) { // ref ==
             if (parameterNameProvider != null) {
                 final Class<?> loaded = loadClass(parameterNameProvider);
-                if (loaded == null) {
-                    log.log(Level.SEVERE, "Can't load " + parameterNameProvider);
-                } else {
+                if (loaded != null) {
                     final Class<? extends ParameterNameProvider> clazz = loaded.asSubclass(ParameterNameProvider.class);
                     targetConfig.parameterNameProviderClass(clazz);
                     log.log(Level.INFO, String.format("Using %s as validation provider.", parameterNameProvider));
+                } else {
+                    log.log(Level.SEVERE, "Can't load " + parameterNameProvider);
                 }
             }
         }
@@ -310,24 +312,28 @@ public class ValidationParser {
     private void applyTraversableResolver(ValidationConfigType xmlConfig,
                                           ConfigurationImpl target) {
         String traversableResolverClass = xmlConfig.getTraversableResolver();
-        if (target.getTraversableResolver() == target.getDefaultTraversableResolver() && traversableResolverClass != null) {
-		    Class<TraversableResolver> clazz = (Class<TraversableResolver>)
-		            loadClass(traversableResolverClass);
-		    target.traversableResolverClass(clazz);
-		    log.log(Level.INFO, String.format("Using %s as traversable resolver.", traversableResolverClass));
-		}
+        if (target.getTraversableResolver() == target.getDefaultTraversableResolver()) { // ref ==
+            if (traversableResolverClass != null) {
+                Class<TraversableResolver> clazz = (Class<TraversableResolver>)
+                        loadClass(traversableResolverClass);
+                target.traversableResolverClass(clazz);
+                log.log(Level.INFO, String.format("Using %s as traversable resolver.", traversableResolverClass));
+            }
+        }
     }
 
     @SuppressWarnings("unchecked")
     private void applyConstraintFactory(ValidationConfigType xmlConfig,
                                         ConfigurationImpl target) {
         String constraintFactoryClass = xmlConfig.getConstraintValidatorFactory();
-        if (target.getConstraintValidatorFactory() == target.getDefaultConstraintValidatorFactory() && constraintFactoryClass != null) {
-		    Class<ConstraintValidatorFactory> clazz = (Class<ConstraintValidatorFactory>)
-		            loadClass(constraintFactoryClass);
-		    target.constraintValidatorFactoryClass(clazz);
-		    log.log(Level.INFO, String.format("Using %s as constraint factory.", constraintFactoryClass));
-		}
+        if (target.getConstraintValidatorFactory() == target.getDefaultConstraintValidatorFactory()) { // ref ==
+            if (constraintFactoryClass != null) {
+                Class<ConstraintValidatorFactory> clazz = (Class<ConstraintValidatorFactory>)
+                        loadClass(constraintFactoryClass);
+                target.constraintValidatorFactoryClass(clazz);
+                log.log(Level.INFO, String.format("Using %s as constraint factory.", constraintFactoryClass));
+            }
+        }
     }
 
     private static void applyMappingStreams(ValidationConfigType xmlConfig,
@@ -369,7 +375,7 @@ public class ValidationParser {
 
     public void ensureValidatorFactoryCanBeBuilt() {
         if (!exceptions.isEmpty()) {
-            throw exceptions.iterator().next();
+            throw  exceptions.iterator().next();
         }
     }
 }
