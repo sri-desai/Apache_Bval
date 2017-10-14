@@ -1,0 +1,86 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-10-13T18:50:55-07:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 49
+
+Apache Licensed: 49
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/file/NotDirectoryValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/file/NotDirectory.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/file/package-info.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/file/SymlinkValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/file/DirectoryValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/file/Symlink.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/file/Directory.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/creditcard/AmericanExpress.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/creditcard/Visa.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/creditcard/package-info.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/creditcard/Discover.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/creditcard/Mastercard.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/creditcard/Diners.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/package-info.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/net/Domain.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/net/package-info.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/net/InetAddressValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/net/DomainValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/net/InetAddress.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/EAN13Validator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/SedolValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/ABANumberValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/package-info.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/ISBN10.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/IBAN.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/ISBN10Validator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/CUSIP.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/VerhoeffValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/ModulusValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/EAN13.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/IBANValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/Luhn.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/ABANumber.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/Sedol.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/LuhnValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/Verhoeff.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/main/java/org/apache/bval/extras/constraints/checkdigit/CUSIPValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/net/DomainValidatorTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/net/InetAddressValidatorTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/VerhoeffCheckDigitTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/CUSIPValidatorTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/ABANumberValidatorTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/LuhnCheckDigitTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/AbstractCheckDigitTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/EAN13CheckDigitTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/ISBN10CheckDigitTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/SedolCheckDigitTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/src/test/java/org/apache/bval/extras/constraints/checkdigit/IBANCheckDigitTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-extras/pom.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

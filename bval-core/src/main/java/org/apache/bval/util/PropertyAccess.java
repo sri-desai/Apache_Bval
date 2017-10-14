@@ -54,7 +54,7 @@ public class PropertyAccess extends AccessStrategy {
         return rememberField != null ? ElementType.FIELD : ElementType.METHOD;
     }
 
-    private static Object getPublicProperty(Object bean, String property) throws InvocationTargetException,
+    protected static Object getPublicProperty(Object bean, String property) throws InvocationTargetException,
         NoSuchMethodException, IllegalAccessException {
         if (bean instanceof Map<?, ?>) {
             return ((Map<?, ?>) bean).get(property);

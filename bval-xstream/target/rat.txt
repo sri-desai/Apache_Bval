@@ -1,0 +1,72 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-10-13T18:50:45-07:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 35
+
+Apache Licensed: 35
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/routines/EMailValidation.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/routines/StandardValidation.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/routines/NOPValidation.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/routines/Reasons.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanReference.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMapper.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanManager.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanBuilder.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanRegistry.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanLoader.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanManagerFactory.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaFeature.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaValue.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBean.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/MetaBeanEnricher.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanFactory.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanInfos.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaProperty.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaElement.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLFeaturesCapable.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaBeanURLLoader.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/main/java/org/apache/bval/xml/XMLMetaValidatorReference.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/java/org/apache/bval/example/BusinessObjectAddress.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/java/org/apache/bval/example/BusinessEnum.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/java/org/apache/bval/example/BusinessObjectBeanInfo.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/java/org/apache/bval/example/BusinessObject.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/java/org/apache/bval/routines/StandardValidationTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/java/org/apache/bval/xml/BeanValidatorTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/java/org/apache/bval/xml/XMLMetaBeanInfosTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/java/org/apache/bval/xml/XMLMetaBeanManagerTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/resources/org/apache/bval/example/test-beanInfos-custom.xml
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/src/test/resources/org/apache/bval/example/test-beanInfos.xml
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/findbugs-exclude-filter.xml
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-xstream/pom.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

@@ -1,0 +1,90 @@
+Manifest-Version: 1.0
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.bval.org.apache.bval.bundle
+Built-By: apoorva
+Bnd-LastModified: 1507945859284
+Specification-Title: JSR-303 Bean Validation
+Bundle-DocURL: http://bval.apache.org/org.apache.bval.bundle/
+Import-Package: javax.annotation;resolution:=optional,javax.el,javax.e
+ nterprise.context;resolution:=optional,javax.enterprise.context.spi;r
+ esolution:=optional,javax.enterprise.event;resolution:=optional,javax
+ .enterprise.inject;resolution:=optional,javax.enterprise.inject.spi;r
+ esolution:=optional,javax.enterprise.util;resolution:=optional,javax.
+ inject;resolution:=optional,javax.interceptor;resolution:=optional,ja
+ vax.persistence;resolution:=optional,javax.validation;resolution:=opt
+ ional,javax.validation.bootstrap;resolution:=optional,javax.validatio
+ n.constraints;resolution:=optional,javax.validation.constraintvalidat
+ ion;resolution:=optional,javax.validation.executable;resolution:=opti
+ onal,javax.validation.groups;resolution:=optional,javax.validation.me
+ tadata;resolution:=optional,javax.validation.spi;resolution:=optional
+ ,javax.xml,javax.xml.bind,javax.xml.bind.annotation,javax.xml.bind.an
+ notation.adapters,javax.xml.namespace,javax.xml.transform,javax.xml.t
+ ransform.stream,javax.xml.validation,org.apache.bval,org.apache.bval.
+ cdi,org.apache.bval.constraints,org.apache.bval.el,org.apache.bval.js
+ r,org.apache.bval.jsr.groups,org.apache.bval.jsr.parameter,org.apache
+ .bval.jsr.resolver,org.apache.bval.jsr.util,org.apache.bval.jsr.xml,o
+ rg.apache.bval.model,org.apache.bval.routines,org.apache.bval.util,or
+ g.apache.bval.util.reflection,org.apache.bval.xml;resolution:=optiona
+ l,org.apache.commons.beanutils,org.apache.commons.lang3;version="3.3"
+ ;resolution:=optional,org.apache.commons.lang3.builder;version="3.3";
+ resolution:=optional,org.apache.commons.lang3.reflect;version="3.3";r
+ esolution:=optional,org.apache.commons.lang3.text.translate;version="
+ 3.3";resolution:=optional,org.xml.sax
+Main-Class: org.apache.bval.util.BValVersion
+Export-Package: org.apache.bval.jsr.parameter;uses:="javax.validation"
+ ,org.apache.bval.util;uses:="org.apache.commons.lang3,org.apache.bval
+ .util.reflection,org.apache.commons.beanutils,org.apache.commons.lang
+ 3.reflect,org.apache.bval.model,org.apache.bval",org.apache.bval.cons
+ traints;uses:="javax.validation.constraints,javax.validation,org.apac
+ he.bval.routines",org.apache.bval.model;uses:="org.apache.commons.lan
+ g3,org.apache.bval.util.reflection,org.apache.commons.lang3.reflect,o
+ rg.apache.bval.util",org.apache.bval.jsr;uses:="org.apache.bval.jsr.x
+ ml,org.apache.bval.util,javax.validation.constraintvalidation,org.apa
+ che.commons.lang3,org.apache.bval.jsr.groups,org.apache.commons.lang3
+ .reflect,javax.validation,org.apache.bval.model,javax.validation.grou
+ ps,org.apache.bval.util.reflection,org.apache.bval,javax.validation.s
+ pi,org.apache.bval.xml,javax.validation.bootstrap,javax.validation.me
+ tadata,org.apache.bval.jsr.util,javax.validation.executable,org.apach
+ e.bval.cdi,org.apache.bval.jsr.parameter,org.apache.bval.jsr.resolver
+ ,org.apache.commons.lang3.builder,javax.enterprise.inject.spi,org.apa
+ che.bval.el",org.apache.bval.jsr.xml;uses:="javax.xml.bind.annotation
+ .adapters,javax.validation.executable,javax.validation,javax.validati
+ on.groups,org.apache.bval.jsr,org.apache.bval.util.reflection,javax.x
+ ml.bind.annotation,javax.xml.bind,org.apache.bval.util,org.apache.bva
+ l,javax.xml.namespace,org.apache.commons.beanutils,javax.xml.validati
+ on,javax.xml.transform,org.apache.commons.lang3,javax.xml.transform.s
+ tream,org.apache.bval.jsr.util,javax.xml,org.xml.sax",org.apache.bval
+ .el;uses:="javax.el",org.apache.bval.jsr.groups;uses:="org.apache.com
+ mons.lang3,javax.validation.groups,javax.validation.metadata,javax.va
+ lidation",org.apache.bval.routines,org.apache.bval.cdi;uses:="javax.e
+ nterprise.util,javax.enterprise.inject,javax.enterprise.inject.spi,ja
+ vax.interceptor,javax.enterprise.context.spi,javax.validation.bootstr
+ ap,javax.validation.metadata,org.apache.commons.lang3,javax.validatio
+ n.executable,javax.validation,javax.enterprise.event,javax.annotation
+ ,org.apache.bval.jsr.util,javax.inject,javax.enterprise.context",org.
+ apache.bval;uses:="org.apache.bval.util,org.apache.bval.model,org.apa
+ che.commons.lang3",org.apache.bval.jsr.util;uses:="org.apache.commons
+ .beanutils,org.apache.bval.jsr,javax.validation,org.apache.commons.la
+ ng3,org.apache.commons.lang3.text.translate,org.apache.bval.util,org.
+ apache.bval.model,org.apache.commons.lang3.reflect,org.apache.bval",o
+ rg.apache.bval.jsr.resolver;uses:="javax.validation,org.apache.common
+ s.lang3,org.apache.bval.util.reflection,javax.persistence",org.apache
+ .bval.util.reflection;uses:="org.apache.commons.lang3"
+SPI-Provider: true
+Bundle-Name: Apache BVal :: org.apache.bval.bundle
+Ignore-Package: org.apache.commons.weaver.privilizer
+Bundle-Description: Apache BVal - Aggregate OSGi Bundle (bval-core + b
+ val-jsr)
+Implementation-Title: Apache BVal
+Implementation-Version: 1.1.2-SNAPSHOT
+Bundle-ManifestVersion: 2
+Specification-Vendor: Sun Microsystems, Inc.
+Embed-Dependency: *;inline=true
+Bundle-Vendor: The Apache Software Foundation
+Tool: Bnd-0.0.357
+Bundle-Version: 1.1.2.SNAPSHOT
+Implementation-Build: offline
+Created-By: Apache Maven Bundle Plugin
+Specification-Version: 1.0
+Build-Jdk: 1.8.0_144
+

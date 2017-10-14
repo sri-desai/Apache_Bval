@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-Description: BVal - non-JSR303 routines and constraints
+Implementation-Title: Apache BVal :: bval-extras (optional)
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.bval.extras
+Implementation-Version: 1.1.2-SNAPSHOT
+Built-By: apoorva
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1507945855566
+Bundle-DocURL: http://bval.apache.org/bval-extras/
+Bundle-Vendor: The Apache Software Foundation
+Import-Package: javax.validation;version="1.1",javax.validation.constr
+ aints;version="1.1",org.apache.bval.extras.constraints.checkdigit,org
+ .apache.bval.extras.constraints.creditcard,org.apache.bval.extras.con
+ straints.file,org.apache.bval.extras.constraints.net
+Tool: Bnd-0.0.357
+Export-Package: org.apache.bval.extras.constraints.file;uses:="javax.v
+ alidation",org.apache.bval.extras.constraints.creditcard;uses:="javax
+ .validation.constraints,org.apache.bval.extras.constraints.checkdigit
+ ,javax.validation",org.apache.bval.extras.constraints.net;uses:="java
+ x.validation",org.apache.bval.extras.constraints.checkdigit;uses:="ja
+ vax.validation"
+Bundle-Version: 1.1.2.SNAPSHOT
+Bundle-Name: Apache BVal :: bval-extras (optional)
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_144
+

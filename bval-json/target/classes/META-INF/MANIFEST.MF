@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-Description: BVal - Optional JSON Component
+Implementation-Title: Apache BVal :: bval-json (optional)
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-SymbolicName: org.apache.bval.json
+Implementation-Version: 1.1.2-SNAPSHOT
+Built-By: apoorva
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1507945853963
+Bundle-DocURL: http://bval.apache.org/bval-json/
+Bundle-Vendor: The Apache Software Foundation
+Import-Package: freemarker.template,org.apache.bval.json,org.apache.bv
+ al.model
+Tool: Bnd-0.0.357
+Export-Package: org.apache.bval.json;uses:="org.apache.bval.model,free
+ marker.template"
+Bundle-Version: 1.1.2.SNAPSHOT
+Bundle-Name: Apache BVal :: bval-json (optional)
+Created-By: Apache Maven Bundle Plugin
+Build-Jdk: 1.8.0_144
+

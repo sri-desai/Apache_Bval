@@ -32,14 +32,15 @@ class BeanUtilsPropertyAccess extends PropertyAccess {
         super(clazz, propertyName);
     }
 
-    @Override
     protected Object getPublicProperty(Object bean)
         throws InvocationTargetException, NoSuchMethodException,
-        IllegalAccessException {
-        if (bean instanceof DynaBean) {
+        IllegalAccessException 
+    {
+        if (bean instanceof DynaBean) 
+        {
             return PropertyUtils.getSimpleProperty(bean, getPropertyName());
         }
-        return super.getPublicProperty(bean);
+        return super.getPublicProperty(bean, "");
     }
 
 }

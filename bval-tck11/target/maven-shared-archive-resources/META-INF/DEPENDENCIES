@@ -1,0 +1,89 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+Apache BVal :: bval-tck11 (TCK Runner)
+
+
+From: 'an unknown organization'
+  - JCommander (http://beust.com/jcommander) com.beust:jcommander:jar:1.12
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Bean Validation API (http://beanvalidation.org) javax.validation:validation-api:jar:1.1.0.Final
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - JSR-349 TCK Test Suite (http://validator.hibernate.org/beanvalidation-tck-tests) org.hibernate.beanvalidation.tck:beanvalidation-tck-tests:jar:1.1.4.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+  - Test Audit Utils API (http://www.jboss.org/jboss-test-audit-api) org.jboss.test-audit:jboss-test-audit-api:jar:1.1.0.Final
+    License: Apache License, Version 2.0  (license.txt)
+  - TestNG (http://testng.org) org.testng:testng:jar:6.5.2
+    License: Apache License, Version 2.0  (http://apache.org/licenses/LICENSE-2.0)
+  - SnakeYAML (http://code.google.com/p/snakeyaml/) org.yaml:snakeyaml:jar:1.6
+    License: Apache License Version 2.0  (LICENSE.txt)
+
+From: 'http://www.beanshell.org/'
+  - BeanShell  org.beanshell:bsh:jar:2.0b4
+    License: GNU LESSER GENERAL PUBLIC LICENSE  (http://www.gnu.org/licenses/lgpl.txt)
+
+From: 'JBoss by Red Hat' (http://www.jboss.org)
+  - Arquillian Config API (http://arquillian.org/arquillian-build/arquillian-config-api) org.jboss.arquillian.config:arquillian-config-api:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Config Implementation Base (http://arquillian.org/arquillian-build/arquillian-config-impl-base) org.jboss.arquillian.config:arquillian-config-impl-base:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Container SPI (http://arquillian.org/arquillian-build/arquillian-container-spi) org.jboss.arquillian.container:arquillian-container-spi:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Container Test API (http://arquillian.org/arquillian-build/arquillian-container-test-api) org.jboss.arquillian.container:arquillian-container-test-api:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Container Test SPI (http://arquillian.org/arquillian-build/arquillian-container-test-spi) org.jboss.arquillian.container:arquillian-container-test-spi:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Core API (http://arquillian.org/arquillian-build/arquillian-core-api) org.jboss.arquillian.core:arquillian-core-api:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Core SPI (http://arquillian.org/arquillian-build/arquillian-core-spi) org.jboss.arquillian.core:arquillian-core-spi:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Test API (http://arquillian.org/arquillian-build/arquillian-test-api) org.jboss.arquillian.test:arquillian-test-api:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Arquillian Test SPI (http://arquillian.org/arquillian-build/arquillian-test-spi) org.jboss.arquillian.test:arquillian-test-spi:jar:1.1.8.Final
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap API (http://www.jboss.org/shrinkwrap-api) org.jboss.shrinkwrap:shrinkwrap-api:jar:1.1.1
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Implementation Base (http://www.jboss.org/shrinkwrap-impl-base) org.jboss.shrinkwrap:shrinkwrap-impl-base:jar:1.0.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap SPI (http://www.jboss.org/shrinkwrap-spi) org.jboss.shrinkwrap:shrinkwrap-spi:jar:1.0.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Descriptors API Base (http://www.jboss.org/shrinkwrap-descriptors-api-base) org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-base:jar:2.0.0-alpha-7
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Descriptors Generated Java EE API (http://www.jboss.org/shrinkwrap-descriptors-api-javaee) org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-api-javaee:jar:2.0.0-alpha-5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Descriptors Implementation (http://www.jboss.org/shrinkwrap-descriptors-impl-base) org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-impl-base:jar:2.0.0-alpha-5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Descriptors Generated Java EE Impl (http://www.jboss.org/shrinkwrap-descriptors-impl-javaee) org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-impl-javaee:jar:2.0.0-alpha-5
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - ShrinkWrap Descriptors SPI (http://www.jboss.org/shrinkwrap-descriptors-spi) org.jboss.shrinkwrap.descriptors:shrinkwrap-descriptors-spi:jar:2.0.0-alpha-7
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Java(TM) EE Interceptors 1.2 API (http://www.jboss.org/jboss-interceptors-api_1.2_spec) org.jboss.spec.javax.interceptor:jboss-interceptors-api_1.2_spec:jar:1.0.0.Final
+    License: Common Development and Distribution License  (http://repository.jboss.org/licenses/cddl.txt)    License: GNU General Public License, Version 2 with the Classpath Exception  (http://repository.jboss.org/licenses/gpl-2.0-ce.txt)
+
+From: 'JUnit' (http://www.junit.org)
+  - JUnit (http://junit.org) junit:junit:jar:4.8.2
+    License: Common Public License Version 1.0  (http://www.opensource.org/licenses/cpl1.0.txt)
+
+From: 'Oracle Corporation' (http://www.oracle.com/)
+  - JAXB Reference Implementation (http://jaxb.java.net/) com.sun.xml.bind:jaxb-impl:jar:2.2.6
+    License: CDDL 1.1  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)
+  - Java Architecture for XML Binding (http://jaxb.java.net/) javax.xml.bind:jaxb-api:jar:2.2.6
+    License: CDDL 1.1  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)    License: GPL2 w/ CPE  (https://glassfish.java.net/public/CDDL+GPL_1_1.html)
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Commons BeanUtils Core (http://commons.apache.org/beanutils/) commons-beanutils:commons-beanutils-core:jar:1.8.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Commons Logging (http://commons.apache.org/logging) commons-logging:commons-logging:jar:1.1.1
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache BVal :: bval-core (http://bval.apache.org/bval-core/) org.apache.bval:bval-core:jar:1.1.2-SNAPSHOT
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache BVal :: bval-jsr (http://bval.apache.org/bval-jsr/) org.apache.bval:bval-jsr:jar:1.1.2-SNAPSHOT
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Apache Commons Lang (http://commons.apache.org/proper/commons-lang/) org.apache.commons:commons-lang3:jar:3.3.2
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
+
+

@@ -1,0 +1,44 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-10-13T18:50:58-07:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 7
+
+Apache Licensed: 7
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-tck11/src/main/java/org/apache/bval/arquillian/EJBEnricher.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-tck11/src/main/java/org/apache/bval/arquillian/jndi/BValJndiFactory.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-tck11/src/main/java/org/apache/bval/arquillian/BValArquillianExtension.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-tck11/src/main/resources/jndi.properties
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-tck11/src/test/resources/arquillian.xml
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-tck11/work-tests-suite.xml
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-tck11/pom.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

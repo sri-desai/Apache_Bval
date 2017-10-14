@@ -1,0 +1,82 @@
+
+*****************************************************
+Summary
+-------
+Generated at: 2017-10-13T18:50:42-07:00
+Notes: 0
+Binaries: 0
+Archives: 0
+Standards: 45
+
+Apache Licensed: 45
+Generated Documents: 0
+
+JavaDocs are generated and so license header is optional
+Generated files do not required license headers
+
+0 Unknown Licenses
+
+*******************************
+
+Unapproved licenses:
+
+
+*******************************
+
+Archives:
+
+*****************************************************
+  Files with Apache License headers will be marked AL
+  Binary files (which do not require AL headers) will be marked B
+  Compressed archives will be marked A
+  Notices, licenses etc will be marked N
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/IntrospectorMetaBeanFactory.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/BeanValidator.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/MetaBeanBuilder.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/BeanValidationContext.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/MetaBeanManager.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/DynamicMetaBean.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/MetaConstructor.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/MetaParameter.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/ValidationContext.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/Meta.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/ValidationListener.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/MetaAnnotated.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/MetaInvocable.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/Validation.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/Features.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/MetaProperty.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/DynaTypeEnum.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/MetaBean.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/MetaMethod.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/DynaType.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/model/FeaturesCapable.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/ValidationResults.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/ConstructorAccess.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/routines/EMailValidationUtils.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/MetaBeanFactory.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/MetaBeanManagerFactory.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/MetaBeanCache.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/MethodAccess.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/AccessStrategy.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/BValVersion.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/reflection/Reflection.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/IndexedAccess.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/FieldAccess.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/BeanUtilsPropertyAccess.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/ValidationHelper.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/KeyedAccess.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/util/PropertyAccess.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/Validate.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/java/org/apache/bval/MetaBeanFinder.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/main/appended-resources/META-INF/NOTICE.vm
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/test/java/org/apache/bval/model/ExampleEnum.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/test/java/org/apache/bval/model/MetaPropertyTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/test/java/org/apache/bval/ValidationResultsTest.java
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/src/test/resources/log4j.xml
+  AL    /home/apoorva/DR/source/BVal/Apache_Bval/bval-core/pom.xml
+ 
+*****************************************************
+ Printing headers for files without AL header...
+ 
+ 

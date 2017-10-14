@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <echo>Version: 1.1.2-SNAPSHOT</echo>
+  <echo>Revision: ${buildNumber}</echo>
+  <echo>Date: ${timestamp}</echo>
+  <mkdir dir="/home/apoorva/DR/source/BVal/Apache_Bval/bval-core/target/classes/META-INF"/>
+  <echo file="/home/apoorva/DR/source/BVal/Apache_Bval/bval-core/target/classes/META-INF/org.apache.bval.revision.properties"># Licensed under Apache License 2.0 - http://www.apache.org/licenses/LICENSE-2.0
+project.name=Apache BVal
+project.version=1.1.2-SNAPSHOT
+svn.revision=${buildNumber}
+svn.branch=${scmBranch}
+build.timestamp=${timestamp}</echo>
+</target>
+</project>
